@@ -13,7 +13,7 @@ export default defineConfig({
   
 reporter: 'html',
 use: {
-  baseURL: 'https://demo.owasp-juice.shop/#/',
+ // baseURL: 'https://demo.owasp-juice.shop/#/',
   /* Take screenshot on failure */
   screenshot: 'only-on-failure',
 

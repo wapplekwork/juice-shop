@@ -4,6 +4,19 @@ import { homePageLocators } from '../page_locators/homePageLocators';
 import { addressPageLocators } from '../page_locators/addressPageLocators';
 import { BASE_URL, DEMO_USER, TIMEOUT } from '../test_datas/constants';
 
+// ลงทะเบียนสร้าง account ใหม่
+export async function registerNewAccount(page: Page, email: string, password: string) {
+    await page.goto(BASE_URL);
+    await page.getByRole(loginPageLocators.accountBtn.role, { name: loginPageLocators.accountBtn.name }).click();
+    await page.getByRole(loginPageLocators.registerMenu.role, { name: loginPageLocators.registerMenu.name }).click();
+    await page.getByRole(loginPageLocators.emailInput.role, { name: loginPageLocators.emailInput.name }).fill(email);
+    await page.getByRole(loginPageLocators.passwordInput.role, { name: loginPageLocators.passwordInput.name }).fill(password);
+    await page.getByRole(loginPageLocators.confirmPasswordInput.role, { name: loginPageLocators.confirmPasswordInput.name }).fill(password);
+    await page.getByRole(loginPageLocators.registerBtn.role, { name: loginPageLocators.registerBtn.name }).click();
+    await expect(page.getByText(loginPageLocators.registrationSuccessMessage.name)).toBeVisible();
+}
+
+
 export async function gotoUrl(page: Page, url: string = BASE_URL) {
     await page.goto(url);
 }

@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { gotoUrl, closeBanners, login, selectProduct, openBasketAndCheckout, addAddress, findProductByName, verifyProductByName, verifyProductNotExist} from '../src/utils/commonActions';
+import { gotoUrl, closeBanners, login, selectProduct, openBasketAndCheckout, addAddress, findProductByName, verifyProductByName, verifyProductNotExist} from '../src/utils/commonFunctions';
 import { ADDRESS_1, ADDRESS_2, DEMO_PRODUCT } from '../src/test_datas/constants';
 
 
