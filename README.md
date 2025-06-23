@@ -1,2 +1,2 @@
-# juice-shop-playwright
+# juice-shop
 Code by playwright 
