@@ -11,7 +11,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   
-reporter: 'html',
+reporter: [['html', { outputFolder: 'reports/html-report' }]],
+outputDir: 'reports/test-results',
 use: {
  // baseURL: 'https://demo.owasp-juice.shop/#/',
   /* Take screenshot on failure */
