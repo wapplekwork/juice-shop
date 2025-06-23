@@ -1,0 +1,25 @@
+environment:
+  dev:
+    baseUrl: 'http://localhost:3000'
+    apiUrl: 'http://localhost:3000/api'
+    webUrl: 'https://demo.owasp-juice.shop/#/'
+  staging:
+    baseUrl: 'http://localhost:3000'
+    apiUrl: 'https://localhost:3000/api'
+
+users:
+  customer:
+    email: 'test@example.com'
+    password: 'Test123!'
+  admin:
+    email: 'admin@example.com'
+    password: 'Admin123!'
+
+testData:
+  products:
+    - name: 'Apple Juice'
+      id: 1
+      price: 1.99
+    - name: 'Orange Juice'
+      id: 2
+      price: 2.99
