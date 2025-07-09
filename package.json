@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": { "build": "tsc",
-    "test": "playwright test --config=playwright.config.ts",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+    "test": "playwright test --config=playwright.config.ts"
+  
   },
   "keywords": [],
   "author": "",
