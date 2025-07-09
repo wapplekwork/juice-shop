@@ -14,7 +14,7 @@ export default defineConfig({
 reporter: [['html', { outputFolder: 'reports/html-report' }]],
 outputDir: 'reports/test-results',
 use: {
- // baseURL: 'https://demo.owasp-juice.shop/#/',
+
   /* Take screenshot on failure */
   screenshot: 'only-on-failure',
 
@@ -29,17 +29,17 @@ use: {
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
     }
-
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // }
   ],
 
 
