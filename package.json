@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": { "build": "tsc --lib es2020,dom",
     "test": "playwright test --config=playwright.config.ts"
-  
   },
   "keywords": [],
   "author": "",
