@@ -2,7 +2,11 @@
   "name": "juice-shop",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": { "build": "tsc",
+    "test": "playwright test --config=playwright.config.ts",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
